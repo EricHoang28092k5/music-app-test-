@@ -1,0 +1,42 @@
+header.header 
+    .container
+        .row.align-items-center 
+            .col-3 
+                .inner-logo 
+                    a(href="/")
+                        img(src="/images/logo.svg", alt="Logo")
+            
+            .col-5 
+                .box-search
+                    form(action="/search/result" method="GET")
+                        div(class="form-group d-flex mb-0")
+                            input(
+                                type="text"
+                                placeholder="Nhap du lieu..."
+                                class="form-control"
+                                name="keyword"
+                                value=keyword 
+                            ) 
+                            button(
+                                type="submit"
+                                class="btn btn-primary"
+                            ) Tao
+                    .inner-suggest
+                        .inner-list 
+                            //- a(href=`/songs/detail/:slugSong` class="inner-item")
+                            //-     .inner-image 
+                            //-         img(src="", alt="")
+                            //-     .inner-info
+                            //-         .inner-title 
+                            //-         .inner-singer 
+                            //-             <i class="fa-solid fa-microphone-lines"></i>
+
+            .col-4
+                .inner-menu 
+                    ul 
+                        li 
+                            a(href="/") <i class="fa-solid fa-house"></i> Trang chu 
+                        li 
+                            a(href="/topics") <i class="fa-solid fa-music"></i> Chu de 
+                        li 
+                            a(href="/favorite-songs") <i class="fa-solid fa-heart"></i> Yeu thich 
